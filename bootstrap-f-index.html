@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <title>Collapse</title>
+</head>
+<body>
+    <h1>Bootstrap Collapseable Features</h1>
+    <h2>With a button</h2>
+    <!-- vertical collapse effect -->
+    <div class="container">
+        <p>Click on the button to see effect</p>
+        <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo-i">With button View More</button>
+
+        <a href="#demo-i" class="btn btn-sucess" data-bs-toggle="collapse">Using anchor tag</a>
+
+        <div id="demo-i" class="collapse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam officia ratione consequatur beatae placeat at ipsa! Quos labore doloremque quia nam maiores placeat odit! Impedit ratione, illo excepturi a praesentium atque. Rem commodi, consequatur quidem sit facilis placeat vitae et assumenda fugit quo natus inventore omnis doloremque, repudiandae voluptatum consectetur sequi voluptatem, soluta repellat nesciunt dolorum. Optio, autem quo!</p>
+        </div>
+        <hr>
+
+        <!-- horizontal collapse effect -->
+        <h2>Horizontal collapse effect</h2>
+        <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo-ii">With button View More</button>
+
+        <div id="demo-ii" style="width: 400px;" class="card card-body collapse collapse-horizontal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam magnam veritatis rerum voluptate velit, ipsa nesciunt dignissimos quo asperiores? Debitis distinctio eligendi praesentium maiores voluptatum iste tempora illum inventore officiis aliquam deserunt enim nam quibusdam sequi, neque totam voluptatem perspiciatis deleniti officia. Cum cupiditate quas excepturi animi distinctio ex sint explicabo, unde suscipit possimus? Facere quae tempore explicabo dicta.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Form validation example</h1>
+        <p>Hit the submit button to see how it works</p>
+        <form action="" class="was-validated">
+            <div class="mb-3 mt-3">
+                <label for="usrname" class="form-label">Username</label>
+                <input type="text" name="dbUser" id="dbUser" class="form-control" title="username" required>
+                <div class="invalid-feedback">Please give your username</div>
+                <div class="valid-feedback">Good</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="dbPwrd" id="dbPwrd" class="form-control" title="password" required>
+                <div class="invalid-feedback">Enter your password</div>
+                <div class="valid-feedback">Good</div>
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" name="chckbox" id="chckbox" class="form-check-input" title="checkbox">
+                <label for="checkbox" class="form-label">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary" title="button">Submit</button>
+        </form>
+    </div>
+    <hr>
+
+    <h1 class="ms-3">Off Canvas</h1>
+    <div class="offcanvas offcanvas-start" id="canvasopen">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">User profile</h2>
+            <button class="btn-close" data-bs-dismiss="offcanvas" title="button"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Herein lies our text
+            </div>
+            <div class="dropdown">
+                <div class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">More actions</div>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Cart</a></li>
+                    <li><a href="#" class="dropdown-item">Wishlist</a></li>
+                    <li><a href="#" class="dropdown-item">Transaction</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ms-3">
+        <button type="button" class="btn btn-success" data-bs-target="#canvasopen" title="button">Open canvas</button>
+        <a href="#canvasopen" class="btn btn-info" data-bs-toggle="offcanvas">Open canvas using anchor tag</a>
+    </div>
+</body>
+</html>
